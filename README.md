@@ -1,4 +1,4 @@
-# LoanSense — AI-Powered Credit Risk Explainer
+# LoanSense : AI-Powered Credit Risk Explainer
 
 > **Bridging the gap between algorithmic credit decisions and human understanding**
 
