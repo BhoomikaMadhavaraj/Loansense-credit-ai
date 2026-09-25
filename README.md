@@ -6,7 +6,7 @@
 
 ## The Business Problem
 
-European banks face a compliance deadline. Under **EU AI Act Article 13**, high-risk AI systems — including credit scoring — must provide meaningful explanations of automated decisions to affected individuals. Non-compliance carries fines of up to **€30 million or 6% of global annual turnover**.
+European banks face a compliance deadline. Under **EU AI Act Article 13**, high-risk AI systems including credit scoring must provide meaningful explanations of automated decisions to affected individuals. Non-compliance carries fines of up to **€30 million or 6% of global annual turnover**.
 
 The problem is not technical. Most banks already have credit risk models. The problem is **explainability**: how do you translate a model's output into a clear, auditable, human-readable explanation that satisfies both the regulator and the customer?
 
@@ -19,7 +19,7 @@ This project explores one answer.
 LoanSense is a prototype AI explainability pipeline for credit risk decisions. Given a loan application, it:
 
 1. **Predicts** credit risk using a trained Random Forest classifier (German Credit Dataset, UCI)
-2. **Explains** the decision using SHAP values — identifying which factors drove the outcome and by how much
+2. **Explains** the decision using SHAP values identifying which factors drove the outcome and by how much
 3. **Translates** the technical explanation into plain language using an LLM (via LangChain + OpenAI/local model)
 4. **Generates** a structured decision report suitable for customer communication and regulatory audit
 
@@ -47,7 +47,7 @@ Plain Language Explanation + Audit Log
 
 During development, the model systematically assigned higher risk scores to **self-employed applicants** regardless of income level or credit history. A self-employed applicant with €80,000 annual income received a higher risk score than an employed applicant with €45,000 income and identical repayment history.
 
-This is a potential violation of **EU non-discrimination principles** and highlights why explainability tooling is not just a compliance checkbox — it is a mechanism for detecting and correcting algorithmic bias before it causes harm.
+This is a potential violation of **EU non-discrimination principles** and highlights why explainability tooling is not just a compliance checkbox, it is a mechanism for detecting and correcting algorithmic bias before it causes harm.
 
 This finding mirrors real-world concerns raised by the European Banking Authority (EBA) in their 2023 report on ML in credit risk.
 
@@ -55,7 +55,7 @@ This finding mirrors real-world concerns raised by the European Banking Authorit
 
 ## Dataset
 
-**German Credit Dataset** — UCI Machine Learning Repository
+**German Credit Dataset** - UCI Machine Learning Repository
 - 1,000 loan applicants
 - 20 features: credit history, loan amount, employment status, age, housing, purpose
 - Binary target: Good credit risk (700) / Bad credit risk (300)
@@ -93,7 +93,7 @@ This finding mirrors real-world concerns raised by the European Banking Authorit
 
 2. **Fairness and explainability are inseparable.** You cannot explain a biased decision clearly without exposing the bias. Explainability tooling is therefore a forcing function for fairer AI.
 
-3. **The gap between model output and regulatory requirement is larger than most banks realise.** A risk score is not an explanation. Bridging that gap requires both ML engineering and communication design — a genuinely cross-functional problem.
+3. **The gap between model output and regulatory requirement is larger than most banks realise.** A risk score is not an explanation. Bridging that gap requires both ML engineering and communication design, a genuinely cross-functional problem.
 
 ---
 
