@@ -2,6 +2,7 @@
 
 > **Bridging the gap between algorithmic credit decisions and human understanding**
 
+**[▶ Try the live demo](https://bhoomikamadhavaraj.github.io/Loansense-credit-ai/)** and review a real credit case, run what-if scenarios, and see the fairness dashboard.
 ---
 
 ## The Business Problem
